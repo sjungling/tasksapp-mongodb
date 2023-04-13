@@ -164,12 +164,13 @@ public class User extends AbstractAuditingEntity implements Serializable {
     }
 
     public Instant getResetDate() {
-       return resetDate;
+        return resetDate;
     }
 
     public void setResetDate(Instant resetDate) {
-       this.resetDate = resetDate;
+        this.resetDate = resetDate;
     }
+
     public String getLangKey() {
         return langKey;
     }

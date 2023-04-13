@@ -69,10 +69,10 @@ public class TasksAppMongoApp {
             protocol = "https";
         }
         log.info("\n----------------------------------------------------------\n\t" +
-                "Application '{}' is running! Access URLs:\n\t" +
-                "Local: \t\t{}://localhost:{}\n\t" +
-                "External: \t{}://{}:{}\n\t" +
-                "Profile(s): \t{}\n----------------------------------------------------------",
+            "Application '{}' is running! Access URLs:\n\t" +
+            "Local: \t\t{}://localhost:{}\n\t" +
+            "External: \t{}://{}:{}\n\t" +
+            "Profile(s): \t{}\n----------------------------------------------------------",
             env.getProperty("spring.application.name"),
             protocol,
             env.getProperty("server.port"),

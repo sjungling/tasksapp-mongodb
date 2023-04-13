@@ -106,7 +106,7 @@ public class WebConfigurer implements ServletContextInitializer, EmbeddedServlet
         String rootPath = Paths.get(".").toUri().normalize().getPath();
         String extractedPath = fullExecutablePath.replace(rootPath, "");
         int extractionEndIndex = extractedPath.indexOf("target/");
-        if(extractionEndIndex <= 0) {
+        if (extractionEndIndex <= 0) {
             return "";
         }
         return extractedPath.substring(0, extractionEndIndex);
@@ -116,7 +116,7 @@ public class WebConfigurer implements ServletContextInitializer, EmbeddedServlet
      * Initializes the caching HTTP Headers Filter.
      */
     private void initCachingHttpHeadersFilter(ServletContext servletContext,
-                                              EnumSet<DispatcherType> disps) {
+        EnumSet<DispatcherType> disps) {
         log.debug("Registering Caching HTTP Headers Filter");
         FilterRegistration.Dynamic cachingHttpHeadersFilter =
             servletContext.addFilter("cachingHttpHeadersFilter",
